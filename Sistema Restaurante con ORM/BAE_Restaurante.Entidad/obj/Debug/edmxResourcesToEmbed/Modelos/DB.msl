@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BAE_RestauranteModelStoreContainer" CdmEntityContainer="BAE_RestauranteEntities">
+    <EntitySetMapping Name="Caja">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Caja">
+        <MappingFragment StoreEntitySet="Caja">
+          <ScalarProperty Name="id_caja" ColumnName="id_caja" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="reserva" ColumnName="reserva" />
+          <ScalarProperty Name="ingreso" ColumnName="ingreso" />
+          <ScalarProperty Name="egreso" ColumnName="egreso" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargo">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Cargo">
+        <MappingFragment StoreEntitySet="Cargo">
+          <ScalarProperty Name="id_cargo" ColumnName="id_cargo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="sueldo" ColumnName="sueldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="num_documento" ColumnName="num_documento" />
+          <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comida">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Comida">
+        <MappingFragment StoreEntitySet="Comida">
+          <ScalarProperty Name="id_comida" ColumnName="id_comida" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="id_tipo_comida" ColumnName="id_tipo_comida" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contactos">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Contactos">
+        <MappingFragment StoreEntitySet="Contactos">
+          <ScalarProperty Name="id_contactos" ColumnName="id_contactos" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="tipo_contacto" ColumnName="tipo_contacto" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Control">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Control">
+        <MappingFragment StoreEntitySet="Control">
+          <ScalarProperty Name="id_control" ColumnName="id_control" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="hora_inicio" ColumnName="hora_inicio" />
+          <ScalarProperty Name="hora_fin" ColumnName="hora_fin" />
+          <ScalarProperty Name="falta" ColumnName="falta" />
+          <ScalarProperty Name="id_empleado" ColumnName="id_empleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doc_compra">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Doc_compra">
+        <MappingFragment StoreEntitySet="Doc_compra">
+          <ScalarProperty Name="id_doc_compra" ColumnName="id_doc_compra" />
+          <ScalarProperty Name="tipo_doc_compra" ColumnName="tipo_doc_compra" />
+          <ScalarProperty Name="num_doc_compra" ColumnName="num_doc_compra" />
+          <ScalarProperty Name="venta_total" ColumnName="venta_total" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doc_venta">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Doc_venta">
+        <MappingFragment StoreEntitySet="Doc_venta">
+          <ScalarProperty Name="id_doc_venta" ColumnName="id_doc_venta" />
+          <ScalarProperty Name="tipo_doc_venta" ColumnName="tipo_doc_venta" />
+          <ScalarProperty Name="num_doc_venta" ColumnName="num_doc_venta" />
+          <ScalarProperty Name="venta_total" ColumnName="venta_total" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleado">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Empleado">
+        <MappingFragment StoreEntitySet="Empleado">
+          <ScalarProperty Name="id_empleado" ColumnName="id_empleado" />
+          <ScalarProperty Name="dni" ColumnName="dni" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+          <ScalarProperty Name="fecha_nacimiento" ColumnName="fecha_nacimiento" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_cargo" ColumnName="id_cargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresa">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Empresa">
+        <MappingFragment StoreEntitySet="Empresa">
+          <ScalarProperty Name="id_empresa" ColumnName="id_empresa" />
+          <ScalarProperty Name="caracteristica" ColumnName="caracteristica" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ingrediente">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Ingrediente">
+        <MappingFragment StoreEntitySet="Ingrediente">
+          <ScalarProperty Name="id_ingrediente" ColumnName="id_ingrediente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="id_tipo_medida" ColumnName="id_tipo_medida" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="id_menu" ColumnName="id_menu" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mesa">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Mesa">
+        <MappingFragment StoreEntitySet="Mesa">
+          <ScalarProperty Name="id_mesa" ColumnName="id_mesa" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="asientos" ColumnName="asientos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pedido">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Pedido">
+        <MappingFragment StoreEntitySet="Pedido">
+          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="tipo_pedido" ColumnName="tipo_pedido" />
+          <ScalarProperty Name="tipo_pago" ColumnName="tipo_pago" />
+          <ScalarProperty Name="imagen_pago" ColumnName="imagen_pago" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="id_empleado" ColumnName="id_empleado" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_mesa" ColumnName="id_mesa" />
+          <ScalarProperty Name="direccion_envio" ColumnName="direccion_envio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pedido_Comida">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Pedido_Comida">
+        <MappingFragment StoreEntitySet="Pedido_Comida">
+          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+          <ScalarProperty Name="id_comida" ColumnName="id_comida" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pedido_Producto">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Pedido_Producto">
+        <MappingFragment StoreEntitySet="Pedido_Producto">
+          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producto">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="fecha_vencimiento" ColumnName="fecha_vencimiento" />
+          <ScalarProperty Name="num_medida" ColumnName="num_medida" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="id_tipo_producto" ColumnName="id_tipo_producto" />
+          <ScalarProperty Name="id_tipo_medida" ColumnName="id_tipo_medida" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reserva">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Reserva">
+        <MappingFragment StoreEntitySet="Reserva">
+          <ScalarProperty Name="id_reserva" ColumnName="id_reserva" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="hora_inicio" ColumnName="hora_inicio" />
+          <ScalarProperty Name="hora_fin" ColumnName="hora_fin" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_comida">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Tipo_comida">
+        <MappingFragment StoreEntitySet="Tipo_comida">
+          <ScalarProperty Name="id_tipo_comida" ColumnName="id_tipo_comida" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_medida">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Tipo_medida">
+        <MappingFragment StoreEntitySet="Tipo_medida">
+          <ScalarProperty Name="id_tipo_medida" ColumnName="id_tipo_medida" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_producto">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Tipo_producto">
+        <MappingFragment StoreEntitySet="Tipo_producto">
+          <ScalarProperty Name="id_tipo_producto" ColumnName="id_tipo_producto" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="BAE_RestauranteModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="usuario1" ColumnName="usuario" />
+          <ScalarProperty Name="contrasena" ColumnName="contrasena" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_empleado" ColumnName="id_empleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Menu_Comida" TypeName="BAE_RestauranteModel.Menu_Comida" StoreEntitySet="Menu_Comida">
+      <EndProperty Name="Comida">
+        <ScalarProperty Name="id_comida" ColumnName="id_comida" />
+      </EndProperty>
+      <EndProperty Name="Menu">
+        <ScalarProperty Name="id_menu" ColumnName="id_menu" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Producto_Doc_compra" TypeName="BAE_RestauranteModel.Producto_Doc_compra" StoreEntitySet="Producto_Doc_compra">
+      <EndProperty Name="Doc_compra">
+        <ScalarProperty Name="id_doc_compra" ColumnName="id_doc_compra" />
+      </EndProperty>
+      <EndProperty Name="Producto">
+        <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Reserva_Mesa" TypeName="BAE_RestauranteModel.Reserva_Mesa" StoreEntitySet="Reserva_Mesa">
+      <EndProperty Name="Mesa">
+        <ScalarProperty Name="id_mesa" ColumnName="id_mesa" />
+      </EndProperty>
+      <EndProperty Name="Reserva">
+        <ScalarProperty Name="id_reserva" ColumnName="id_reserva" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
